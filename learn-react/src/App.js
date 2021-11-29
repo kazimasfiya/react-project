@@ -3,22 +3,21 @@ import './App.css';
 import Header from './Header';
 import User from './User';
 import UserClass from './UserClass';
-//import React from "react";
+import TestWork from './TestWork';
 
 function App() {
 
-function Apple()
-{
-  return <h3>This is component within component</h3>
-}
+
 
   return (
     <div className="App">
       <h1>Hello World</h1>
-      <User></User>
-      <Test></Test>
+      {/*<Test></Test>
       <UserClass></UserClass>
-      <Apple></Apple>
+      <Apple></Apple>*/
+      }
+      <User></User>
+      <TestWork></TestWork>
       
     </div>
   );
