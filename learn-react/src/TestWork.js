@@ -28,7 +28,10 @@ function TestWork()
              <h3>Count: {count}</h3>
              <button onClick={updateData}>Update Data</button>
              <button onClick={increment}>Counter</button>
-           
+
+             <hr/>
+
+            
        
         </div>
        
@@ -36,3 +39,5 @@ function TestWork()
 }
 
 export default TestWork
+
+

@@ -4,6 +4,10 @@ import Header from './Header';
 import User from './User';
 import UserClass from './UserClass';
 import TestWork from './TestWork';
+import Example from './Example';
+import Input from './Input';
+import Toggle from './Toggle';
+import Form from './Form';
 
 function App() {
 
@@ -14,10 +18,16 @@ function App() {
       <h1>Hello World</h1>
       {/*<Test></Test>
       <UserClass></UserClass>
-      <Apple></Apple>*/
-      }
-      <User></User>
+      <Apple></Apple>
+       <User></User>
       <TestWork></TestWork>
+       <UserClass></UserClass>
+       <Example></Example>
+        <Input></Input>
+        <Toggle></Toggle>
+      */
+      }
+    <Form></Form>
       
     </div>
   );
