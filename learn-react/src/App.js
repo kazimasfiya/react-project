@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
+//import Header from './Header';
 import User from './User';
 import UserClass from './UserClass';
 import TestWork from './TestWork';
@@ -8,10 +8,15 @@ import Example from './Example';
 import Input from './Input';
 import Toggle from './Toggle';
 import Form from './Form';
+import Profile from './Profile';
+import FormValidation from './FormValidation';
+import FunctionProps from './FunctionProps';
+import LifeCycleByClass from './LifeCycleByClass';
+import { useState } from 'react';
 
 function App() {
 
-
+const [name,setState]=useState("MAhtab");
 
   return (
     <div className="App">
@@ -25,9 +30,15 @@ function App() {
        <Example></Example>
         <Input></Input>
         <Toggle></Toggle>
+         <Form></Form>
+         <Profile></Profile>
+            <FormValidation></FormValidation>
+            <FunctionProps ></FunctionProps>
       */
       }
-    <Form></Form>
+   
+<LifeCycleByClass ></LifeCycleByClass>
+{/*<button onClick={()=>{setState("Kazim1")}}>Update Method</button>*/}
       
     </div>
   );
