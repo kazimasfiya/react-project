@@ -13,14 +13,21 @@ import FormValidation from './FormValidation';
 import FunctionProps from './FunctionProps';
 import LifeCycleByClass from './LifeCycleByClass';
 import { useState } from 'react';
+import Hooks from './Hooks';
+import Style from './Style';
+import Bootstrap from './Bootstrap';
+import ArrayList from './ArrayList';
+import BootstrapArrayList from './BootstrapArrayList';
+import NestedListArray from './NestedListArray';
 
 function App() {
 
-const [name,setState]=useState("MAhtab");
+const [counter,setState]=useState(0);
 
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>Hello World from App.js/MAin File</h1>
+      <h3>Below are it's component</h3>
       {/*<Test></Test>
       <UserClass></UserClass>
       <Apple></Apple>
@@ -34,12 +41,23 @@ const [name,setState]=useState("MAhtab");
          <Profile></Profile>
             <FormValidation></FormValidation>
             <FunctionProps ></FunctionProps>
+            <LifeCycleByClass ></LifeCycleByClass>
+            <Style></Style>
+            <Bootstrap></Bootstrap>
+            <ArrayList></ArrayList>
+            <BootstrapArrayList></BootstrapArrayList>
       */
       }
    
-<LifeCycleByClass ></LifeCycleByClass>
-{/*<button onClick={()=>{setState("Kazim1")}}>Update Method</button>*/}
-      
+
+{/*<button onClick={()=>{setState("Kazim1")}}>Update Method</button>
+ <Hooks counter={counter}></Hooks>
+      <button onClick={()=>{setState(counter+1)}}>Update Method</button>
+*/}
+
+
+<NestedListArray></NestedListArray>
+     
     </div>
   );
 }

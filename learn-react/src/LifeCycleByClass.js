@@ -8,7 +8,8 @@ class LifeCycleByClass extends Component {
         this.state = {
             name: "MAhtab",
             email: "mahtab@test.com",
-            count: 0
+            count: 0,
+            show:true
         }
 
         console.warn("constructor call")
@@ -22,7 +23,7 @@ class LifeCycleByClass extends Component {
 
     componentDidUpdate(prevProps, prevState, snapshot) {
         console.warn("component did update")
-        console.warn(prevState);
+        //console.warn(prevState);
     }
 
     shouldComponentUpdate()
@@ -30,6 +31,10 @@ class LifeCycleByClass extends Component {
         console.warn("should component update")
         return true
     }
+
+   
+
+    
 
     render() {
 
@@ -44,9 +49,32 @@ class LifeCycleByClass extends Component {
                 <p>{ this.state.count }</p>
 
                 <button onClick={() => { this.setState({ count: this.state.count + 1 }) }}>Update</button>
+
+                { this.state.show?<ToggleChild></ToggleChild>:<h1>Child component removed</h1>}
+                <button onClick={()=>{this.setState({show:!this.state.show})}}>Toggle Child</button>
+
             </div>
         )
     }
 }
 
 export default LifeCycleByClass
+
+
+class ToggleChild extends Component
+{
+    componentWillUnmount()
+    {
+        console.warn("component unmount")
+    }
+   render(){
+    return (
+        <div>
+            <h1>Unmount Example Child Component</h1>
+        </div>
+   
+      )
+   }
+       
+ 
+}
