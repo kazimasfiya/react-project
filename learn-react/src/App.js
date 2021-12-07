@@ -19,6 +19,11 @@ import Bootstrap from './Bootstrap';
 import ArrayList from './ArrayList';
 import BootstrapArrayList from './BootstrapArrayList';
 import NestedListArray from './NestedListArray';
+import Reuse from './Reuse';
+import LiftingStateUp from './LiftingStateUp';
+import PureComponentM from './PureComponentM';
+import MemoHook from './MemoHook';
+
 
 function App() {
 
@@ -28,6 +33,7 @@ const [counter,setState]=useState(0);
     <div className="App">
       <h1>Hello World from App.js/MAin File</h1>
       <h3>Below are it's component</h3>
+      
       {/*<Test></Test>
       <UserClass></UserClass>
       <Apple></Apple>
@@ -46,6 +52,9 @@ const [counter,setState]=useState(0);
             <Bootstrap></Bootstrap>
             <ArrayList></ArrayList>
             <BootstrapArrayList></BootstrapArrayList>
+            <NestedListArray></NestedListArray>
+            <Reuse></Reuse>
+            <LiftingStateUp></LiftingStateUp>
       */
       }
    
@@ -55,8 +64,10 @@ const [counter,setState]=useState(0);
       <button onClick={()=>{setState(counter+1)}}>Update Method</button>
 */}
 
+<PureComponentM></PureComponentM>
+<MemoHook></MemoHook>
 
-<NestedListArray></NestedListArray>
+
      
     </div>
   );

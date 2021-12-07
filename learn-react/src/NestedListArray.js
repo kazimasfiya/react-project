@@ -51,10 +51,11 @@ function NestedListArray() {
                                     <Table striped bordered hover responsive>
                                     <tbody>
                                     {
-                                        data.address.map((item)=>{
+                                        data.address.map((item,j)=>{
 
                                             return (
                                                 <tr>
+                                                <td > {++j }</td>
                                                 <td>{item.city}</td>
                                                 <td>{item.country}</td>
                                                </tr>
