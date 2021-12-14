@@ -23,6 +23,15 @@ import Reuse from './Reuse';
 import LiftingStateUp from './LiftingStateUp';
 import PureComponentM from './PureComponentM';
 import MemoHook from './MemoHook';
+import RefUse from './RefUse';
+import FwdRefComp from './FwdRefComp';
+import ControlledComponent from './ControlledComponent';
+import UncontrolledComponent from './UncontrolledComponent';
+import HOC from './HOC';
+import Routing from './Routing';
+import PageNotFound from './PageNotFound';
+import DynamicRouting from './DynamicRouting';
+import GetAPI from './GetAPI';
 
 
 function App() {
@@ -55,6 +64,14 @@ const [counter,setState]=useState(0);
             <NestedListArray></NestedListArray>
             <Reuse></Reuse>
             <LiftingStateUp></LiftingStateUp>
+            <PureComponentM></PureComponentM>
+<MemoHook></MemoHook>
+<RefUse></RefUse>
+<FwdRefComp></FwdRefComp>
+<HOC></HOC>
+<Routing></Routing>
+<PageNotFound></PageNotFound>
+<DynamicRouting></DynamicRouting>
       */
       }
    
@@ -64,9 +81,9 @@ const [counter,setState]=useState(0);
       <button onClick={()=>{setState(counter+1)}}>Update Method</button>
 */}
 
-<PureComponentM></PureComponentM>
-<MemoHook></MemoHook>
 
+
+<GetAPI></GetAPI>
 
      
     </div>

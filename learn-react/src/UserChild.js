@@ -1,6 +1,6 @@
-import React from 'react'
+import React,{forwardRef} from 'react'
 
-function UserChild(props) {
+function UserChild(props,ref) {
 
     var name="MAhtab KAzim"
 
@@ -8,10 +8,13 @@ function UserChild(props) {
         <div>
              <h1>User Function Component</h1>
             
+             
              <button onClick={()=>{props.alert(name)}}>Click Me!</button>
+
+             <input type="text" ref={ref}></input>
        
         </div>
     )
 }
 
-export default UserChild
+export default forwardRef(UserChild)
