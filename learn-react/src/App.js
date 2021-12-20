@@ -32,6 +32,12 @@ import Routing from './Routing';
 import PageNotFound from './PageNotFound';
 import DynamicRouting from './DynamicRouting';
 import GetAPI from './GetAPI';
+import PostAPI from './PostAPI';
+import PreFilled from './PreFilled';
+import PreveiousState from './PreveiousState';
+import StatewithObject from './StatewithObject';
+import { CommonContext } from './components/CommonContext';
+import ContextApi from './ContextApi';
 
 
 function App() {
@@ -72,6 +78,13 @@ const [counter,setState]=useState(0);
 <Routing></Routing>
 <PageNotFound></PageNotFound>
 <DynamicRouting></DynamicRouting>
+
+<GetAPI></GetAPI>
+<PostAPI></PostAPI>
+ <PreFilled></PreFilled>
+ <PreveiousState></PreveiousState>
+ <StatewithObject></StatewithObject>
+ <ContextApi></ContextApi>
       */
       }
    
@@ -82,10 +95,9 @@ const [counter,setState]=useState(0);
 */}
 
 
+<ContextApi></ContextApi>
 
-<GetAPI></GetAPI>
-
-     
+    
     </div>
   );
 }
