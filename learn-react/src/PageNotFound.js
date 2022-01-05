@@ -15,6 +15,7 @@ function PageNotFound() {
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/about" element={<About />}></Route>
                     <Route path="*" element={<Error404 />}></Route>
+                  
                 </Routes>
         </div>
     )
